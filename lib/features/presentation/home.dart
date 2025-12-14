@@ -119,7 +119,7 @@ class _NavBar extends StatelessWidget {
               // Em mobile, talvez esconder o "Sou Família" da nav e deixar só no hero
               if (MediaQuery.of(context).size.width > 600)
                 TextButton(
-                  onPressed: () => context.go('/login-familia'),
+                  onPressed: () => context.pushNamed('area-beneficiario'),
                   // Rota GoRouter
                   child: const Text(
                     "Sou Família",
