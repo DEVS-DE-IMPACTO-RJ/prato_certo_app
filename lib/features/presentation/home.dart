@@ -117,7 +117,6 @@ class _NavBar extends StatelessWidget {
           Row(
             children: [
               // Em mobile, talvez esconder o "Sou Família" da nav e deixar só no hero
-              if (MediaQuery.of(context).size.width > 600)
                 TextButton(
                   onPressed: () => context.pushNamed('area-beneficiario'),
                   // Rota GoRouter
@@ -138,11 +137,11 @@ class _NavBar extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8),
                   ),
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 20,
+                    horizontal: 15,
                     vertical: 16,
                   ),
                 ),
-                child: const Text("Sou ONG / Colaborador"),
+                child: const Text("Colaborador"),
               ),
             ],
           ),
